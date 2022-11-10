@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { CSSReset } from "../src/components/CSSReset"
 import Menu from "../src/components/Menu";
 import { StyledTimeline } from "../src/components/Timeline"
+import Banner from "../src/components/Banner";
 
 function HomePage() {
   console.log(config.playlists)
@@ -10,6 +11,7 @@ function HomePage() {
     <>
       <CSSReset />
       <div >
+        <Banner></Banner>
         <Menu></Menu>
         <Header></Header>
         <Timeline playlists={config.playlists}></Timeline>
