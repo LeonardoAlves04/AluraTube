@@ -1,11 +1,11 @@
+import config from "../config.json";
 import react from "react"
 
 function Banner(props) {
     return (
         <div>
-            <img src="aluratube/src/assets/banner-nuvem.jpg" alt="banner contendo nuvens"></img>
+            {config.banner}
         </div>
-
     )
 }
 
