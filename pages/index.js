@@ -21,9 +21,9 @@ function HomePage() {
 }
 
 function Banner(props) {
-
+  const imagem = <img src="./assets/banner.jpg"></img>
   return (<div>
-    <img src=".\src\assets\banner-nuvem.jpg"></img>
+    {imagem}
   </div>)
 }
 
