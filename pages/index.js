@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { CSSReset } from "../src/components/CSSReset"
 import Menu from "../src/components/Menu";
 import { StyledTimeline } from "../src/components/Timeline"
-import BannerNuvem from "../src/components/imagens/BannerNuvem.jpg"
+import banner from "../src/components/imagens/banner.jpg"
 
 
 function HomePage() {
@@ -12,7 +12,7 @@ function HomePage() {
     <>
       <CSSReset />
       <div >
-        <Bannerimage></Bannerimage>
+        <Banner></Banner>
         <Menu></Menu>
         <Header></Header>
         <Timeline playlists={config.playlists}></Timeline>
@@ -21,9 +21,9 @@ function HomePage() {
   )
 }
 
-function Bannerimage(BannerNuvem) {
+function Banner(banner) {
   return (<div>
-    <img src={BannerNuvem} />
+    <img src={banner} />
   </div >)
 }
 
