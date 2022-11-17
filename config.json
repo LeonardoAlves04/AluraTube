@@ -7,106 +7,126 @@
             {
                 "title": "JOGUEI A PARTIDA MAIS DIFÍCIL DA MINHA VIDA!! Matei 50?? 😨",
                 "url": "https://www.youtube.com/watch?v=clWoJSwbB2o",
-                "thumb": "https://img.youtube.com/vi/clWoJSwbB2o/hqdefault.jpg"
+                "thumb": "https://img.youtube.com/vi/clWoJSwbB2o/hqdefault.jpg",
+                "key": "1"
             },
             {
                 "title": "GOD OF WAR RAGNAROK #3 - Chegando em Nidavellir! | Gameplay no PS5 em Português PT-BR!",
                 "url": "https://www.youtube.com/watch?v=VPqJELDOoWA",
-                "thumb": "https://img.youtube.com/vi/VPqJELDOoWA/hqdefault.jpg"
+                "thumb": "https://img.youtube.com/vi/VPqJELDOoWA/hqdefault.jpg",
+                "key": "2"
             },
             {
                 "title": "Trailer de lançamento de Apex Legends: Eclipse",
                 "url": "https://www.youtube.com/watch?v=Ha_VsTDmoGg",
-                "thumb": "https://img.youtube.com/vi/Ha_VsTDmoGg/hqdefault.jpg"
+                "thumb": "https://img.youtube.com/vi/Ha_VsTDmoGg/hqdefault.jpg",
+                "key": "3"
             },
             {
                 "title": "alanzoka nextage jogando Overwatch 2 - #1",
                 "url": "https://www.youtube.com/watch?v=PdsOp4e394w",
-                "thumb": "https://img.youtube.com/vi/PdsOp4e394w/hqdefault.jpg"
+                "thumb": "https://img.youtube.com/vi/PdsOp4e394w/hqdefault.jpg",
+                "key": "4"
             },
             {
                 "title": "É JUNGLE, TOP, TUDO DIFF MEU PARCEIRO!!",
                 "url": "https://www.youtube.com/watch?v=7fiuZMgeERg",
-                "thumb": "https://img.youtube.com/vi/7fiuZMgeERg/hqdefault.jpg"
+                "thumb": "https://img.youtube.com/vi/7fiuZMgeERg/hqdefault.jpg",
+                "key": "5"
             },
             {
                 "title": "VALORANT Champions Istanbul: Grande Final",
                 "url": "https://www.youtube.com/watch?v=epXxTChozbU",
-                "thumb": "https://img.youtube.com/vi/epXxTChozbU/hqdefault.jpg"
+                "thumb": "https://img.youtube.com/vi/epXxTChozbU/hqdefault.jpg",
+                "key": "6"
             },
             {
                 "title": "Assim é a sensação de jogar a 360hz no Valorant - POV",
                 "url": "https://www.youtube.com/watch?v=993L5K1BSxw",
-                "thumb": "https://img.youtube.com/vi/993L5K1BSxw/hqdefault.jpg"
+                "thumb": "https://img.youtube.com/vi/993L5K1BSxw/hqdefault.jpg",
+                "key": "7"
             },
             {
                 "title": "T1 e DRX fazendo a MELHOR FINAL DE TODAS - MUNDIAL DA ZUEIRA (FINAL)",
                 "url": "https://www.youtube.com/watch?v=mtvKql3YfVE",
-                "thumb": "https://img.youtube.com/vi/mtvKql3YfVE/hqdefault.jpg"
+                "thumb": "https://img.youtube.com/vi/mtvKql3YfVE/hqdefault.jpg",
+                "key": "8"
             }
         ],
         "front-end": [
             {
                 "title": "React JS // Dicionário do Programador",
                 "url": "https://www.youtube.com/watch?v=NhUr8cwDiiM",
-                "thumb": "https://img.youtube.com/vi/NhUr8cwDiiM/hqdefault.jpg"
+                "thumb": "https://img.youtube.com/vi/NhUr8cwDiiM/hqdefault.jpg",
+                "key": "9"
             },
             {
                 "title": "10 ideias de projetos em HTML e CSS para adicionar no portfólio!",
                 "url": "https://www.youtube.com/watch?v=y4ltLH9iK8E",
-                "thumb": "https://img.youtube.com/vi/y4ltLH9iK8E/hqdefault.jpg"
+                "thumb": "https://img.youtube.com/vi/y4ltLH9iK8E/hqdefault.jpg",
+                "key": "10"
             },
             {
                 "title": "Se Você Passar Por Esses 5 Desafios, Você Aprendeu React JS",
                 "url": "https://www.youtube.com/watch?v=aJR7f45dBNs",
-                "thumb": "https://img.youtube.com/vi/aJR7f45dBNs/hqdefault.jpg"
+                "thumb": "https://img.youtube.com/vi/aJR7f45dBNs/hqdefault.jpg",
+                "key": "11"
             },
             {
                 "title": "o que eu faço HOJE como Desenvolvedor Mobile",
                 "url": "https://www.youtube.com/watch?v=xU2r-dSdN1o",
-                "thumb": "https://img.youtube.com/vi/xU2r-dSdN1o/hqdefault.jpg"
+                "thumb": "https://img.youtube.com/vi/xU2r-dSdN1o/hqdefault.jpg",
+                "key": "12"
             },
             {
                 "title": "Pokedex com API, React hooks, useState, useContext, localStorage",
                 "url": "https://www.youtube.com/watch?v=n2kkXup2T1c",
-                "thumb": "https://img.youtube.com/vi/n2kkXup2T1c/hqdefault.jpg"
+                "thumb": "https://img.youtube.com/vi/n2kkXup2T1c/hqdefault.jpg",
+                "key": "13"
             },
             {
                 "title": "Curso Javascript Completo 2020 [Iniciantes] + 14 Mini-Projetos",
                 "url": "https://www.youtube.com/watch?v=i6Oi-YtXnAU",
-                "thumb": "https://img.youtube.com/vi/i6Oi-YtXnAU/hqdefault.jpg"
+                "thumb": "https://img.youtube.com/vi/i6Oi-YtXnAU/hqdefault.jpg",
+                "key": "14"
             },
             {
                 "title": "O quanto de JAVASCRIPT é preciso saber antes de aprender REACT",
                 "url": "https://www.youtube.com/watch?v=t9w7JtNOacI",
-                "thumb": "https://img.youtube.com/vi/t9w7JtNOacI/hqdefault.jpg"
+                "thumb": "https://img.youtube.com/vi/t9w7JtNOacI/hqdefault.jpg",
+                "key": "15"
             },
             {
                 "title": "Curso de React Para Completos Iniciantes",
                 "url": "https://www.youtube.com/watch?v=ErjWNvP6mko",
-                "thumb": "https://img.youtube.com/vi/ErjWNvP6mko/hqdefault.jpg"
+                "thumb": "https://img.youtube.com/vi/ErjWNvP6mko/hqdefault.jpg",
+                "key": "16"
             }
         ],
         "back-end": [
             {
                 "title": "MELHOR FORMA DE APRENDER PYTHON (Google Colab Notebook)",
                 "url": "https://www.youtube.com/watch?v=Gojqw9BQ5qY",
-                "thumb": "https://img.youtube.com/vi/Gojqw9BQ5qY/hqdefault.jpg"
+                "thumb": "https://img.youtube.com/vi/Gojqw9BQ5qY/hqdefault.jpg",
+                "key": "17"
             },
             {
                 "title": "Curso de Java #01 - História do Java - Gustavo Guanabara",
                 "url": "https://www.youtube.com/watch?v=sTX0UEplF54&list=PLHz_AreHm4dkI2ZdjTwZA4mPMxWTfNSpR",
-                "thumb": "https://img.youtube.com/vi/sTX0UEplF54/hqdefault.jpg"
+                "thumb": "https://img.youtube.com/vi/sTX0UEplF54/hqdefault.jpg",
+                "key": "18"
             },
             {
                 "title": "Como AUTOMATIZAR TAREFAS com PYTHON [Meu Processo]",
                 "url": "https://www.youtube.com/watch?v=58yiXNgE0Wo",
-                "thumb": "https://img.youtube.com/vi/58yiXNgE0Wo/hqdefault.jpg"
+                "thumb": "https://img.youtube.com/vi/58yiXNgE0Wo/hqdefault.jpg",
+                "key": "19"
             },
             {
                 "title": "Curso de Node.js Para Completos Iniciantes",
                 "url": "https://www.youtube.com/watch?v=IOfDoyP1Aq0",
-                "thumb": "https://img.youtube.com/vi/IOfDoyP1Aq0/hqdefault.jpg"
+                "thumb": "https://img.youtube.com/vi/IOfDoyP1Aq0/hqdefault.jpg",
+                "key": "20"
             }
         ]
     }
