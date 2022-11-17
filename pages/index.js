@@ -3,8 +3,6 @@ import styled from "styled-components";
 import { CSSReset } from "../src/components/CSSReset"
 import Menu from "../src/components/Menu";
 import { StyledTimeline } from "../src/components/Timeline"
-import banner from "../src/components/imagens/banner.jpg"
-
 
 function HomePage() {
   console.log(config.playlists)
@@ -12,7 +10,6 @@ function HomePage() {
     <>
       <CSSReset />
       <div >
-        <Banner></Banner>
         <Menu></Menu>
         <Header></Header>
         <Timeline playlists={config.playlists}></Timeline>
@@ -21,11 +18,13 @@ function HomePage() {
   )
 }
 
-function Banner(banner) {
-  return (<div>
-    <img src={banner} />
-  </div >)
-}
+export default HomePage
+
+const StyledBanner = styled.div`
+background-image: url(https://images.unsplash.com/photo-1501630834273-4b5604d2ee31?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)
+background-position: center center;
+height:230px;
+`;
 
 const StyledHeader = styled.div`
   img {
@@ -46,7 +45,7 @@ const StyledHeader = styled.div`
 function Header() {
   return (
     <StyledHeader>
-      {/* <img src="banner"></img> */}
+      <StyledBanner />
       <section className="user-info">
         <img src={`https://github.com/${config.github}.png`}></img>
         <div>
@@ -93,4 +92,3 @@ function Timeline(props) {
 
 }
 
-export default HomePage
