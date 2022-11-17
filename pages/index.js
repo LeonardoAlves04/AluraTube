@@ -1,7 +1,7 @@
 import config from "../config.json";
 import styled from "styled-components";
 import { CSSReset } from "../src/components/CSSReset"
-import Menu from "../src/components/Menu";
+import Menu from "../src/components/Menu/";
 import { StyledTimeline } from "../src/components/Timeline"
 
 function HomePage() {
@@ -19,12 +19,6 @@ function HomePage() {
 }
 
 export default HomePage
-
-const StyledBanner = styled.div`
-background-image: url(https://images.unsplash.com/photo-1534423861386-85a16f5d13fd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)
-background-position: center center;
-height:230px;
-`;
 
 const StyledHeader = styled.div`
   img {
@@ -45,7 +39,6 @@ const StyledHeader = styled.div`
 function Header() {
   return (
     <StyledHeader>
-      <StyledBanner />
       <section className="user-info">
         <a href="https://github.com/LeonardoAlves04"><img src={`https://github.com/${config.github}.png`} alt="profile picture"></img></a>
         <div>
