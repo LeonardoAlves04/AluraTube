@@ -37,8 +37,6 @@ const StyledSearch = styled.div`
 `;
 
 export default function Search() {
-  const [valorDaBusca, setValorDaBusca] = React.useState("teste");
-  console.log("Search", valorDaBusca)
   return (
     <StyledSearch>
       <input type="text" onChange={(e) => { setValorDaBusca(e.target.value) }} />

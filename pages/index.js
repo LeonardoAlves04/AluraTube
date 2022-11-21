@@ -1,3 +1,4 @@
+import React from "react"
 import config from "../config.json";
 import styled from "styled-components";
 import { CSSReset } from "../src/components/CSSReset"
@@ -6,7 +7,10 @@ import { StyledTimeline } from "../src/components/Timeline"
 
 function HomePage() {
   console.log(config.playlists)
-  const [valorDaBusca, setValorDaBusca] = React.useState("teste");
+
+  const [valorDoFiltro, setValorDoFiltro] = React.useState("React");
+
+
   return (
     <>
       <CSSReset />
@@ -19,7 +23,7 @@ function HomePage() {
   )
 }
 
-const valorDoFiltro = "Apex";
+
 
 export default HomePage
 
@@ -57,7 +61,7 @@ function Header() {
   )
 }
 
-function Timeline(props) {
+function Timeline({ props }) {
   const playlistNames = Object.keys(props.playlists)
   return (
     <StyledTimeline>
