@@ -37,12 +37,11 @@ const StyledSearch = styled.div`
 `;
 
 export default function Search() {
-  const [valorDaBusca, setValorDaBusca] = React.useState("alanzoka");
+  const [valorDaBusca, setValorDaBusca] = React.useState("teste");
   console.log("Search", valorDaBusca)
   return (
     <StyledSearch>
-      <input type="text" onChange={() => { console.log("digitou algo") }} />
-      {valorDaBusca}
+      <input type="text" onChange={(e) => { setValorDaBusca(e.target.value) }} />
       <button>
         🔎
       </button>

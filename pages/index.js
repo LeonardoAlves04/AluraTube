@@ -6,6 +6,7 @@ import { StyledTimeline } from "../src/components/Timeline"
 
 function HomePage() {
   console.log(config.playlists)
+  const [valorDaBusca, setValorDaBusca] = React.useState("teste");
   return (
     <>
       <CSSReset />
@@ -17,6 +18,8 @@ function HomePage() {
     </>
   )
 }
+
+const valorDoFiltro = "Apex";
 
 export default HomePage
 
@@ -66,7 +69,7 @@ function Timeline(props) {
           < section >
             <h2>{playlistName}</h2>
             <div>
-              {videos.map((video) => {
+              {videos.filter((video) => { return video.title.includes(valorDoFiltro) }).map((video) => {
                 return (
                   <a href={video.url}>
                     <img src={video.thumb} />
