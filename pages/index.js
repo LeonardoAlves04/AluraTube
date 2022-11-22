@@ -7,22 +7,19 @@ import { StyledTimeline } from "../src/components/Timeline"
 
 function HomePage() {
   console.log(config.playlists)
-
-  const [valorDoFiltro, setValorDoFiltro] = React.useState("React");
+  const [valorDoFiltro, setValorDoFiltro] = React.useState("Over");
 
   return (
     <>
       <CSSReset />
       <div >
-        <Menu></Menu>
+        <Menu valorDoFiltro={valorDoFiltro} setValorDoFiltro={setValorDoFiltro}></Menu>
         <Header></Header>
         <Timeline searchValue={valorDoFiltro} playlists={config.playlists}></Timeline>
       </div>
     </>
   )
 }
-
-const valorDoFiltro = "React"
 
 export default HomePage
 
@@ -88,6 +85,5 @@ function Timeline({ searchValue, ...props }) {
       })}
     </StyledTimeline>
   )
-
 }
 
