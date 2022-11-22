@@ -10,20 +10,19 @@ function HomePage() {
 
   const [valorDoFiltro, setValorDoFiltro] = React.useState("React");
 
-
   return (
     <>
       <CSSReset />
       <div >
         <Menu></Menu>
         <Header></Header>
-        <Timeline playlists={config.playlists}></Timeline>
+        <Timeline searchValue={valorDoFiltro} playlists={config.playlists}></Timeline>
       </div>
     </>
   )
 }
 
-
+const valorDoFiltro = "React"
 
 export default HomePage
 
@@ -61,19 +60,19 @@ function Header() {
   )
 }
 
-function Timeline({ props }) {
-  const playlistNames = Object.keys(props.playlists)
+function Timeline({ searchValue, ...props }) {
+  const playlistNames = Object.keys(props.playlists);
   return (
     <StyledTimeline>
-
-      {playlistNames.map(function (playlistName) {
+      {playlistNames.map((playlistName) => {
         const videos = props.playlists[playlistName];
+        console.log(playlistName);
         console.log(videos);
         return (
           < section >
             <h2>{playlistName}</h2>
             <div>
-              {videos.filter((video) => { return video.title.includes(valorDoFiltro) }).map((video) => {
+              {videos.filter((video) => { return video.title.includes(searchValue) }).map((video) => {
                 return (
                   <a href={video.url}>
                     <img src={video.thumb} />

@@ -39,10 +39,8 @@ const StyledSearch = styled.div`
 export default function Search() {
   return (
     <StyledSearch>
-      <input type="text" onChange={(e) => { setValorDaBusca(e.target.value) }} />
-      <button>
-        🔎
-      </button>
+      <input type="text" onChange={(e) => setValorDaBusca(e.target.value)} />
+      <button>🔎</button>
 
     </StyledSearch>
   )
