@@ -6,16 +6,15 @@ import Menu from "../src/components/Menu/";
 import { StyledTimeline } from "../src/components/Timeline"
 
 function HomePage() {
-  console.log(config.playlists)
-  const [valorDoFiltro, setValorDoFiltro] = React.useState("Over");
+  const [valorDoFiltro, setValorDoFiltro] = React.useState("");
 
   return (
     <>
       <CSSReset />
       <div >
-        <Menu valorDoFiltro={valorDoFiltro} setValorDoFiltro={setValorDoFiltro}></Menu>
-        <Header></Header>
-        <Timeline searchValue={valorDoFiltro} playlists={config.playlists}></Timeline>
+        <Menu valorDoFiltro={valorDoFiltro} setValorDoFiltro={setValorDoFiltro} />
+        <Header />
+        <Timeline searchValue={valorDoFiltro} playlists={config.playlists}>Conteúdo</Timeline>
       </div>
     </>
   )
@@ -63,15 +62,13 @@ function Timeline({ searchValue, ...props }) {
     <StyledTimeline>
       {playlistNames.map((playlistName) => {
         const videos = props.playlists[playlistName];
-        console.log(playlistName);
-        console.log(videos);
         return (
           < section >
             <h2>{playlistName}</h2>
             <div>
               {videos.filter((video) => { return video.title.includes(searchValue) }).map((video) => {
                 return (
-                  <a href={video.url}>
+                  <a key={video.url} href={video.url}>
                     <img src={video.thumb} />
                     <span>
                       {video.title}
