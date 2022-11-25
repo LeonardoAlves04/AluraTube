@@ -29,7 +29,6 @@ const StyledHeader = styled.div`
     border-radius: 50%;
   }
   .user-info{
-    margin-top: 50px;
     display: flex;
     align-items: center;
     widht: 100%;
@@ -38,9 +37,16 @@ const StyledHeader = styled.div`
   }
 `;
 
+const StyledBanner = styled.div`
+background-color: blue;
+background-image: url(${config.bg});
+height: 280px;
+`;
+
 function Header() {
   return (
     <StyledHeader>
+      <StyledBanner />
       <section className="user-info">
         <a href="https://github.com/LeonardoAlves04"><img src={`https://github.com/${config.github}.png`} alt="profile picture"></img></a>
         <div>
@@ -63,7 +69,7 @@ function Timeline({ searchValue, ...props }) {
       {playlistNames.map((playlistName) => {
         const videos = props.playlists[playlistName];
         return (
-          < section >
+          < section key={playlistName}>
             <h2>{playlistName}</h2>
             <div>
               {videos.filter((video) => {
