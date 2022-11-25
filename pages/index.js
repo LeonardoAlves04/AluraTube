@@ -66,7 +66,11 @@ function Timeline({ searchValue, ...props }) {
           < section >
             <h2>{playlistName}</h2>
             <div>
-              {videos.filter((video) => { return video.title.includes(searchValue) }).map((video) => {
+              {videos.filter((video) => {
+                const titleNormalized = video.title.toLowerCase();
+                const searchValueNormalized = searchValue.toLowerCase();
+                return titleNormalized.includes(searchValueNormalized)
+              }).map((video) => {
                 return (
                   <a key={video.url} href={video.url}>
                     <img src={video.thumb} />
