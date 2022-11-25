@@ -10,7 +10,6 @@ function HomePage() {
 
   return (
     <>
-      <CSSReset />
       <div >
         <Menu valorDoFiltro={valorDoFiltro} setValorDoFiltro={setValorDoFiltro} />
         <Header />

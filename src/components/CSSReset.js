@@ -9,6 +9,7 @@ export const CSSReset = createGlobalStyle`
   }
   body {
     font-family: sans-serif;
+    background-color: ${({ theme })} => theme.backgroundBase};
   }
   /* NextJS */
   html {
