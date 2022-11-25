@@ -41,6 +41,8 @@ const StyledBanner = styled.div`
 background-color: blue;
 background-image: url(${config.bg});
 height: 280px;
+background-repeat: no-repeat;
+background-size: cover;
 `;
 
 function Header() {
