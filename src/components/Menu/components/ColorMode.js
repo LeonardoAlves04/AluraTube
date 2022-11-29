@@ -7,6 +7,7 @@ export const ColorModeContext = React.createContext({
 
 export default function ColorModeProvider(props) {
     const [mode, setMode] = React.useState(props.initialMode);
+
     return (
         <ColorModeContext.Provider value={{ mode: props.initialMode }}>
             {props.children}
