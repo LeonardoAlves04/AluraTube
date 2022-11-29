@@ -1,6 +1,10 @@
+import React from "react";
 import { redirect } from "next/dist/server/api-utils";
+import { useContext } from "react";
 import { ThemeProvider } from "styled-components";
 import { CSSReset } from "../src/components/CSSReset";
+import ColorModeProvider, { ColorModeContext } from "../src/components/Menu/components/ColorMode";
+import ColorMode from "../src/components/Menu/components/ColorMode";
 
 const theme = {
     light: {
@@ -21,12 +25,15 @@ const theme = {
 
 
 function MyApp({ Component, pageProps }) {
+    const contexto = React.useContext(ColorModeContext);
     return (
         <>
-            <ThemeProvider theme={theme.light}>
-                <CSSReset />
-                <Component {...pageProps} />
-            </ThemeProvider>
+            <ColorModeProvider>
+                <ThemeProvider theme={theme.light}>
+                    <CSSReset />
+                    <Component {...pageProps} />
+                </ThemeProvider>
+            </ColorModeProvider>
         </>
     )
 }
