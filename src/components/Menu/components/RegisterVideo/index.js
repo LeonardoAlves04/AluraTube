@@ -3,18 +3,23 @@ import { StyledRegisterVideo } from "./styles";
 
 function useForm(propsDoForm) {
     const [values, setValues] = React.useState(propsDoForm.initialValues);
+
     return {
         values,
         handleChange: (event) => {
+            console.log(event.target)
             const value = event.target.value;
-            const name = event.target.name
+            const name = event.target.name;
             setValues({
                 ...values,
                 [name]: value,
             });
+        },
+        clearForm() {
+            setValues({});
         }
     };
-};
+}
 
 export default function RegisterVideo() {
     const formCadastro = useForm({ initialValues: { titulo: "Apex Legends", url: "https://ApexLegends" } });
@@ -26,7 +31,9 @@ export default function RegisterVideo() {
         {formVisivel ? (
             <form onSubmit={(event) => {
                 event.preventDefault();
-                console.log(values);
+                console.log(formCadastro.values);
+                setFormVisivel(false);
+                formCadastro.clearForm();
             }}>
 
                 <div>
