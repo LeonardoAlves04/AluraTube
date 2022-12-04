@@ -9,7 +9,7 @@ function useForm(propsDoForm) {
         handleChange: (event) => {
             console.log(event.target)
             const value = event.target.value;
-            const name = event.target.name;
+            const name = event.target.name
             setValues({
                 ...values,
                 [name]: value,
@@ -22,41 +22,42 @@ function useForm(propsDoForm) {
 }
 
 export default function RegisterVideo() {
-    const formCadastro = useForm({ initialValues: { titulo: "Apex Legends", url: "https://ApexLegends" } });
+    const formCadastro = useForm({ initialValues: { titulo: "Cazemiro Copa", url: "https://www.youtube.com/@CazeTV" } });
     const [formVisivel, setFormVisivel] = React.useState(true);
 
     return (<StyledRegisterVideo>
         <button className="add-video" onClick={() => setFormVisivel(true)}>+</button>
 
-        {formVisivel ? (
-            <form onSubmit={(event) => {
-                event.preventDefault();
-                console.log(formCadastro.values);
-                setFormVisivel(false);
-                formCadastro.clearForm();
-            }}>
+        {formVisivel
+            ? (
+                <form onSubmit={(event) => {
+                    event.preventDefault();
+                    console.log(formCadastro.values);
+                    setFormVisivel(false);
+                    formCadastro.clearForm();
+                }}>
 
-                <div>
-                    <button className="close-modal" onClick={() => setFormVisivel(false)}>
-                        X
-                    </button>
+                    <div>
+                        <button type="button" className="close-modal" onClick={() => setFormVisivel(false)}>
+                            X
+                        </button>
 
-                    <input placeholder="Título do vídeo"
-                        value={formCadastro.values.titulo}
-                        name="titulo"
-                        onChange={formCadastro.handleChange}
-                    />
-                    <input placeholder="URL"
-                        value={formCadastro.values.url}
-                        name="url"
-                        onChange={formCadastro.handleChange}
-                    />
+                        <input placeholder="Título do vídeo"
+                            name="titulo"
+                            value={formCadastro.values.titulo}
+                            onChange={formCadastro.handleChange}
+                        />
+                        <input placeholder="URL"
+                            name="url"
+                            value={formCadastro.values.url}
+                            onChange={formCadastro.handleChange}
+                        />
 
-                    <button type="submit" onClick={() => setFormVisivel(false)}>Cadastrar</button>
+                        <button type="submit">Cadastrar</button>
 
-                </div>
-            </form>
-        ) : false
+                    </div>
+                </form>
+            ) : false
         }
     </StyledRegisterVideo >)
 }
