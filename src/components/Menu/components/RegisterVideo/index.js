@@ -21,6 +21,8 @@ function useForm(propsDoForm) {
     };
 }
 
+const supabase = createClient('https://xyzcompany.supabase.co', 'public-anon-key')
+
 export default function RegisterVideo() {
     const formCadastro = useForm({ initialValues: { titulo: "Cazemiro Copa", url: "https://www.youtube.com/@CazeTV" } });
     const [formVisivel, setFormVisivel] = React.useState(true);
@@ -36,7 +38,6 @@ export default function RegisterVideo() {
                     setFormVisivel(false);
                     formCadastro.clearForm();
                 }}>
-
                     <div>
                         <button type="button" className="close-modal" onClick={() => setFormVisivel(false)}>
                             X
