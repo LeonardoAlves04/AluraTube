@@ -25,15 +25,16 @@ function useForm(propsDoForm) {
 const PROJECT_URL = "https://jupquzrprxlxzuvusaix.supabase.co";
 const PUBLIC_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imp1cHF1enJwcnhseHp1dnVzYWl4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2NzAzNDQ5NDAsImV4cCI6MTk4NTkyMDk0MH0.mDO5abFfhKUBkQH5L8vKxyh_yKuGB6mLuGTkjLEjKqw"
 const supabase = createClient(PROJECT_URL, PUBLIC_KEY)
+console.log(supabase)
 
 function getThumbnail(url) {
     return `https://img.youtube.com/vi/${url.split("v=")[1]}/hqdefault.jpg`
 }
+
 export default function RegisterVideo() {
     const formCadastro = useForm({ initialValues: { titulo: "VALORANT Champions Istanbul: Grande Final", url: "https://www.youtube.com/watch?v=epXxTChozbU" } });
-    const [formVisivel, setFormVisivel] = React.useState(true);
-
-
+    const [formVisivel, setFormVisivel] = React.useState(false);
+    console.log(supabase)
     return (<StyledRegisterVideo>
         <button className="add-video" onClick={() => setFormVisivel(true)}>+</button>
 
@@ -43,14 +44,14 @@ export default function RegisterVideo() {
                     event.preventDefault();
                     console.log(formCadastro.values);
 
-                    supabase.from("video").insert({
+                    supabase.from("videos").insert({
                         title: formCadastro.values.titulo,
                         url: formCadastro.values.url,
                         thumb: getThumbnail(formCadastro.values.url),
                         playlist: "jogos",
                     })
-                        .then((oqueveio) => {
-                            console.log(oqueveio);
+                        .then((oqueretornou) => {
+                            console.log(oqueretornou);
                         })
                         .catch((err) => {
                             console.log(err);
