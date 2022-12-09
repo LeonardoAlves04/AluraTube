@@ -26,7 +26,6 @@ const PROJECT_URL = "https://jupquzrprxlxzuvusaix.supabase.co";
 const PUBLIC_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imp1cHF1enJwcnhseHp1dnVzYWl4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2NzAzNDQ5NDAsImV4cCI6MTk4NTkyMDk0MH0.mDO5abFfhKUBkQH5L8vKxyh_yKuGB6mLuGTkjLEjKqw"
 const supabase = createClient(PROJECT_URL, PUBLIC_KEY)
 
-
 function getThumbnail(url) {
     return `https://img.youtube.com/vi/${url.split("v=")[1]}/hqdefault.jpg`
 }
@@ -75,7 +74,6 @@ export default function RegisterVideo() {
                         />
 
                         <button type="submit">Cadastrar</button>
-
                     </div>
                 </form>
             ) : false
