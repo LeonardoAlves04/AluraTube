@@ -4,21 +4,17 @@ import styled from "styled-components";
 import { CSSReset } from "../src/components/CSSReset"
 import Menu from "../src/components/Menu/";
 import { StyledTimeline } from "../src/components/Timeline";
-import { createClient } from "@supabase/supabase-js"
+import { videoService } from "../src/services/videoService";
 
-
-const PROJECT_URL = "https://jupquzrprxlxzuvusaix.supabase.co";
-const PUBLIC_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imp1cHF1enJwcnhseHp1dnVzYWl4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2NzAzNDQ5NDAsImV4cCI6MTk4NTkyMDk0MH0.mDO5abFfhKUBkQH5L8vKxyh_yKuGB6mLuGTkjLEjKqw"
-const supabase = createClient(PROJECT_URL, PUBLIC_KEY);
 
 function HomePage() {
+  const service = videoService();
   const [valorDoFiltro, setValorDoFiltro] = React.useState("");
   const [playlists, setPlaylists] = React.useState({});
 
   React.useEffect(() => {
-    console.log("useEffect");
-    supabase.from("videos")
-      .select("*")
+    service
+      .getAllVideos()
       .then((dados) => {
         console.log(dados.data);
         const novasPlaylists = { ...playlists }

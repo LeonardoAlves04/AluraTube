@@ -34,7 +34,7 @@ function getThumbnail(url) {
 export default function RegisterVideo() {
     const formCadastro = useForm({ initialValues: { titulo: "VALORANT Champions Istanbul: Grande Final", url: "https://www.youtube.com/watch?v=epXxTChozbU" } });
     const [formVisivel, setFormVisivel] = React.useState(false);
-    console.log(supabase)
+
     return (<StyledRegisterVideo>
         <button className="add-video" onClick={() => setFormVisivel(true)}>+</button>
 
