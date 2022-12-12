@@ -31,7 +31,7 @@ function getThumbnail(url) {
 }
 
 export default function RegisterVideo() {
-    const formCadastro = useForm({ initialValues: { titulo: "VALORANT Champions Istanbul: Grande Final", url: "https://www.youtube.com/watch?v=epXxTChozbU" } });
+    const formCadastro = useForm({ initialValues: { titulo: "", url: "" } });
     const [formVisivel, setFormVisivel] = React.useState(false);
 
     return (<StyledRegisterVideo>
@@ -42,7 +42,7 @@ export default function RegisterVideo() {
                 <form onSubmit={(event) => {
                     event.preventDefault();
 
-                    supabase.from("videos").insert({
+                    supabase.from("video").insert({
                         title: formCadastro.values.titulo,
                         url: formCadastro.values.url,
                         thumb: getThumbnail(formCadastro.values.url),

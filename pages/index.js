@@ -110,6 +110,7 @@ function Timeline({ searchValue, ...props }) {
           </section >
         )
       })}
+      <h2>Aqui vai a seção de favorites</h2>
     </StyledTimeline>
   )
 }
