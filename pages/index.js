@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Menu from "../src/components/Menu";
 import { StyledTimeline } from "../src/components/Timeline";
 import { videoService } from "../src/services/videoService";
+import { CONFIG_FILES } from "next/dist/shared/lib/constants";
 
 function HomePage() {
   const service = videoService();
@@ -122,6 +123,11 @@ function Timeline({ searchValue, ...propriedades }) {
         )
       })}
       <h2>favoritos</h2>
+      <div className="container-img-favorite">
+        <img className="img-favorite" src="https://yt3.ggpht.com/_z4kYQ1KzISEY3Y3vVH_j3Gn2IaafeLRqUSanOUc7fktTXjUPdV00pHaQjvLmgsieMiHJjYk=s48-c-k-c0x00ffffff-no-rj" />
+        <img className="img-favorite" src="https://yt3.ggpht.com/ytc/AMLnZu8zAmF1BDo7p8K9xw_3tr0J8fEdWbbq64ykTRSTpg=s48-c-k-c0x00ffffff-no-rj" />
+        <img className="img-favorite" src="https://yt3.ggpht.com/tTQ1wPAQm448OhG7QVwfiSs0MKIcu-A5lQUq3dhAMxQ6R4TWpLL3RgtG6G61Ji3COUUn__Yoxw=s48-c-k-c0x00ffffff-no-rj" />
+      </div>
     </StyledTimeline>
   )
 }
