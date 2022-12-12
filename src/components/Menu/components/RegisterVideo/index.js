@@ -24,7 +24,7 @@ function useForm(propsDoForm) {
 
 const PROJECT_URL = "https://jupquzrprxlxzuvusaix.supabase.co";
 const PUBLIC_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imp1cHF1enJwcnhseHp1dnVzYWl4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2NzAzNDQ5NDAsImV4cCI6MTk4NTkyMDk0MH0.mDO5abFfhKUBkQH5L8vKxyh_yKuGB6mLuGTkjLEjKqw"
-const supabase = createClient(PROJECT_URL, PUBLIC_KEY)
+const supabase = createClient(PROJECT_URL, PUBLIC_KEY, { fetch: fetch.bind(globalThis) })
 
 function getThumbnail(url) {
     return `https://img.youtube.com/vi/${url.split("v=")[1]}/hqdefault.jpg`
@@ -48,8 +48,8 @@ export default function RegisterVideo() {
                         thumb: getThumbnail(formCadastro.values.url),
                         playlist: "jogos",
                     })
-                        .then((oqueretornou) => {
-                            console.log(oqueretornou);
+                        .then((oqueveio) => {
+                            console.log(oqueveio);
                         })
                         .catch((err) => {
                             console.log(err);
@@ -57,6 +57,7 @@ export default function RegisterVideo() {
                     setFormVisivel(false);
                     formCadastro.clearForm();
                 }}>
+
                     <div>
                         <button type="button" className="close-modal" onClick={() => setFormVisivel(false)}>
                             X
