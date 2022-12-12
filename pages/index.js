@@ -16,7 +16,6 @@ function HomePage() {
     service
       .getAllVideos()
       .then((dados) => {
-        console.log(dados.data);
         const novasPlaylists = { ...playlists }
         dados.data.forEach((video) => {
           if (!novasPlaylists[video.playlist]) {
