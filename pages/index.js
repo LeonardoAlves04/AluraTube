@@ -69,7 +69,7 @@ const StyledBanner = styled.div`
     background-color: blue;
     background-image: url(${({ bg }) => bg});
     /* background-image: url(${config.bg}); */
-    height: 230px;
+    height: 300px;
 `;
 
 function Header() {
@@ -77,7 +77,7 @@ function Header() {
     <StyledHeader>
       <StyledBanner bg={config.bg} />
       <section className="user-info">
-        <img src={`https://github.com/${config.github}.png`} />
+        <a href="https://github.com/LeonardoAlves04"><img src={`https://github.com/${config.github}.png`} /></a>
         <div>
           <h2>
             {config.name}
