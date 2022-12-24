@@ -1,10 +1,7 @@
 import React from "react";
-import { redirect } from "next/dist/server/api-utils";
-import { useContext } from "react";
 import { ThemeProvider } from "styled-components";
 import { CSSReset } from "../src/components/CSSReset";
 import ColorModeProvider, { ColorModeContext } from "../src/components/Menu/components/ColorMode";
-import ColorMode from "../src/components/Menu/components/ColorMode";
 import RegisterVideo from "../src/components/Menu/components/RegisterVideo";
 
 const theme = {

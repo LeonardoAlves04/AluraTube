@@ -17,7 +17,6 @@ function HomePage() {
       .getAllVideos()
       .then((dados) => {
         console.log(dados.data);
-        // Forma imutavel
         const novasPlaylists = {};
         dados.data.forEach((video) => {
           if (!novasPlaylists[video.playlist]) novasPlaylists[video.playlist] = [];
@@ -69,8 +68,8 @@ const StyledHeader = styled.div`
 
 const StyledBanner = styled.div`
     background-color: blue;
-    background-image: url(${({ bg }) => bg});
-    /* background-image: url(${config.bg}); */
+     background-image: url(${config.bg});
+     background-size: cover;
     height: 300px;
 `;
 

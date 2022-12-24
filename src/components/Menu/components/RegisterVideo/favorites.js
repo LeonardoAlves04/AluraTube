@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import config from "../../config.json"
 
 export const StyledFavorites = styled.div`
     width: 100%;

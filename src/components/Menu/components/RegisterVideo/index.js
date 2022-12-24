@@ -21,6 +21,9 @@ function useForm(propsDoForm) {
         }
     };
 }
+function ReloadPage() {
+    location.reload();
+}
 
 const PROJECT_URL = "https://jupquzrprxlxzuvusaix.supabase.co";
 const PUBLIC_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imp1cHF1enJwcnhseHp1dnVzYWl4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2NzAzNDQ5NDAsImV4cCI6MTk4NTkyMDk0MH0.mDO5abFfhKUBkQH5L8vKxyh_yKuGB6mLuGTkjLEjKqw"
@@ -36,6 +39,7 @@ export default function RegisterVideo() {
 
     return (<StyledRegisterVideo>
         <button className="add-video" onClick={() => setFormVisivel(true)}>+</button>
+
 
         {formVisivel
             ? (
@@ -54,6 +58,7 @@ export default function RegisterVideo() {
                         .catch((err) => {
                             console.log(err);
                         })
+
                     setFormVisivel(false);
                     formCadastro.clearForm();
                 }}>
@@ -74,10 +79,11 @@ export default function RegisterVideo() {
                             onChange={formCadastro.handleChange}
                         />
 
-                        <button type="submit">Cadastrar</button>
+                        <button type="submit" >Cadastrar</button>
                     </div>
                 </form>
             ) : false
         }
+
     </StyledRegisterVideo >)
 }
