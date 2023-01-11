@@ -18,3 +18,4 @@ Segue algumas imagens do projeto:
 # Aba dos favoritos:
 ![Captura de Tela (113)](https://user-images.githubusercontent.com/69488943/211915304-323319e5-85ac-43e4-b627-ec4c44fe68a9.png)
 
+PS: Esse projeto usa o banco de dados através do supabase, porém se não houver nenhuma requisição/chamada de API ele pausa o projeto. Caso não houver nenhum vídeo a mostra aconteceu isso e o mais rápido possível eu faço voltar ao normal, obrigado!
