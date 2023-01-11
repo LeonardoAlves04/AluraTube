@@ -18,4 +18,10 @@ Segue algumas imagens do projeto:
 # Aba dos favoritos:
 ![Captura de Tela (113)](https://user-images.githubusercontent.com/69488943/211915304-323319e5-85ac-43e4-b627-ec4c44fe68a9.png)
 
+# Busca (letras maiúsculas e minúscula:
+![Captura de Tela (114)](https://user-images.githubusercontent.com/69488943/211918578-0ba288ec-d6d4-4349-8c83-ffc8d1463471.png)
+
+# Modal para adicionar vídeos:
+![Captura de Tela (115)](https://user-images.githubusercontent.com/69488943/211918553-33be1b17-5c41-4ab5-a0ee-355974ebd608.png)
+
 PS: Esse projeto usa o banco de dados através do supabase, porém se não houver nenhuma requisição/chamada de API ele pausa o projeto. Caso não houver nenhum vídeo a mostra aconteceu isso e o mais rápido possível eu faço voltar ao normal, obrigado!
