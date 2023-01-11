@@ -18,7 +18,7 @@ Segue algumas imagens do projeto:
 # Aba dos favoritos:
 ![Captura de Tela (113)](https://user-images.githubusercontent.com/69488943/211915304-323319e5-85ac-43e4-b627-ec4c44fe68a9.png)
 
-# Busca (letras maiúsculas e minúscula:
+# Busca (letras maiúsculas e minúsculas):
 ![Captura de Tela (114)](https://user-images.githubusercontent.com/69488943/211918578-0ba288ec-d6d4-4349-8c83-ffc8d1463471.png)
 
 # Modal para adicionar vídeos:
