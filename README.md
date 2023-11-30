@@ -3,7 +3,7 @@
 <p align="center">
   <img src="https://img.shields.io/static/v1?label=react&message=framework&color=blue&style=for-the-badge&logo=REACT"/>
   <img src="https://img.shields.io/static/v1?label=supabase&message=BancoDeDados&color=blue&style=for-the-badge&logo=supabase"/>
-  <img src="http://img.shields.io/static/v1?label=javascript&message=linguagem&color=red&style=for-the-badge&logo=JS"/>
+  <img src="http://img.shields.io/static/v1?label=javascript&message=linguagem&color=red&style=for-the-badge&logo=javascript"/>
 </p>
 
 > Status do Projeto: :heavy_check_mark: Concluído!
