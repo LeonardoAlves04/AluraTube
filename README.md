@@ -1,27 +1,52 @@
-# AluraTube
+## Site de busca e reprodução de vídeos
 
-Fala pessoal, espero que estejam bem. Esse projeto foi uma semana de aula gratuitas oferecida pela Alura e sinceramente foi o melhor conteúdo gratuito que ja consumi. Esse foi um projeto que aprendi muuuuuito sobre React e sobre outras coisas, como: styled components, propriedades, estruturação de projeto, padrão de commits via git, logica de programação e diversas outras coisas. Basicamente é um clone do youtube onde eu montei meu canal, minhas playlists de video e minha aba de favoritos. Você pode adicionar qualquer vídeo (não só do youtube), basta colocar url e o titulo do vídeo. Sei que tenho muitas coisas para melhorar, mas fiquei bem satisfeito com projeto.
-#
-Para ver o projeto: https://alura-tube-rust.vercel.app
-# 
-Segue algumas imagens do projeto:
+<p align="center">
+  <img src="https://img.shields.io/static/v1?label=react&message=framework&color=blue&style=for-the-badge&logo=REACT"/>
+  <img src="https://img.shields.io/static/v1?label=supabase&message=BancoDeDados&color=blue&style=for-the-badge&logo=supabase"/>
+  <img src="http://img.shields.io/static/v1?label=javascript&message=linguagem&color=red&style=for-the-badge&logo=JS"/>
+</p>
 
-# Dark Mode:
-![Captura de Tela (110)](https://user-images.githubusercontent.com/69488943/211915219-e1610861-ccae-43fe-a90b-c8725199d4c5.png)
+> Status do Projeto: :heavy_check_mark: Concluído!
 
-# Light Mode:
-![Captura de Tela (111)](https://user-images.githubusercontent.com/69488943/211915250-d6800f9f-dfb4-4b19-8c9f-60f8f60be304.png)
+### Tópicos 🔹
 
-# Playlists dos vídeos (back-end, front-end e games):
-![Captura de Tela (112)](https://user-images.githubusercontent.com/69488943/211915275-afe0a5a1-e06a-44ec-84b1-3526fa9c4048.png)
+:small_blue_diamond: [Descrição do projeto](#descrição-do-projeto)
 
-# Aba dos favoritos:
-![Captura de Tela (113)](https://user-images.githubusercontent.com/69488943/211915304-323319e5-85ac-43e4-b627-ec4c44fe68a9.png)
+:small_blue_diamond: [Funcionalidades](#funcionalidades)
 
-# Busca (letras maiúsculas e minúsculas):
-![Captura de Tela (114)](https://user-images.githubusercontent.com/69488943/211918578-0ba288ec-d6d4-4349-8c83-ffc8d1463471.png)
+:small_blue_diamond: [Deploy da Aplicação](#deploy-da-aplicação-dash)
 
-# Modal para adicionar vídeos:
-![Captura de Tela (115)](https://user-images.githubusercontent.com/69488943/211918553-33be1b17-5c41-4ab5-a0ee-355974ebd608.png)
+:small_blue_diamond: [Casos de Uso](#casos-de-uso-warning)
 
-PS: Esse projeto usa o banco de dados através do supabase, porém se não houver nenhuma requisição/chamada de API ele pausa o projeto. Caso não houver nenhum vídeo a mostra aconteceu isso e o mais rápido possível eu faço voltar ao normal, obrigado!
+## Descrição do projeto 📝
+
+<p align="justify">
+Um site de busca e reprodução de vídeos, contendo uma barra de pesquisa onde você pode pesquisar de modo dinâmico pelos vídeos que você deseja (entre os vídeos disponíveis no site). Ao clicar, o vídeo é reproduzido através do embed do youtube.
+</p>
+
+## Funcionalidades 📦
+
+:heavy_check_mark: Busca fácil de vídeos: Por meio da barra de pesquisa, de modo dinâmico você pode pesquisar pelos vídeos disponíveis. 
+
+:heavy_check_mark: Navegação facilitada: interface simples e fácil de ser utilizada, apenas deslizando para o lado para visualizar os vídeos disponíveis.
+
+:heavy_check_mark: Dark e Light mode: clicando apenas em um botão você pode mudar o tema do site, entre preto ou branco.
+
+## Deploy da Aplicação :dash:
+
+https://alura-tube-rust.vercel.app
+
+## Linguagens e libs utilizadas :books:
+
+- React: Uma biblioteca JavaScript popular para construir interfaces de usuário interativas.
+
+- Javascript: Linguagem front-end que possibilita a criação de sites responsivos e dinâmicos.
+
+- Supabase: um banco de dados gratuíto e intuitivo de ser utilizado.
+
+## Imagens do projeto:
+
+![Captura de Tela (304)](https://github.com/LeonardoAlves04/fsw-trips/assets/69488943/6a586bba-62f7-497a-bb5f-593b529c4f5a)
+![Captura de Tela (306)](https://github.com/LeonardoAlves04/fsw-trips/assets/69488943/9e5176d7-3599-4f55-a9b3-66a9cb840aca)
+![Captura de Tela (310)](https://github.com/LeonardoAlves04/fsw-trips/assets/69488943/785083df-be2b-4c56-943c-61739a710127)
+![Captura de Tela (309)](https://github.com/LeonardoAlves04/fsw-trips/assets/69488943/30b1aac1-5883-4dd4-9e9a-cba3efd37df9)
